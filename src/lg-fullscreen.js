@@ -60,7 +60,7 @@
     };
 
     Fullscreen.prototype.exitFullscreen = function() {
-        if (document.exitFullscreen) {
+        if (document.fullscreenElement) {
             document.exitFullscreen();
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
